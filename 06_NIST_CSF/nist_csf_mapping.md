@@ -15,7 +15,7 @@ NIST CSF 2.0 is used here as an **outcomes framework**, not as a set of organiza
 | Function | **Protect (PR)** — safeguards to manage cybersecurity risk are used |
 | Category | **PR.AA — Identity Management, Authentication, and Access Control** |
 | Subcategory | **PR.AA-03** — "Users, services, and hardware are authenticated" |
-| Rationale | MFA is how this organization implements its required authentication strength for customers. The 247 accounts were authenticated, but not at the required strength — the PR.AA-03 outcome (authentication commensurate with what the organization requires) was not achieved for this population. |
+| Rationale | MFA is how this organization implements its required authentication strength for customers. MFA was required for the affected customer population, but 247 active accounts remained under a legacy authentication policy without the required MFA protection. The accounts were still authenticated; the deficiency was that the organization's required authentication method was not enforced for this population. That is distinct from the NIST outcome itself — "Users, services, and hardware are authenticated" — which describes authentication occurring, not the specific method an organization requires. |
 
 ### M-02 — Legacy population not managed → PR.AA-01
 
@@ -70,7 +70,7 @@ NIST CSF 2.0 is used here as an **outcomes framework**, not as a set of organiza
 | Function | **Identify (ID)** |
 | Category | **ID.RA — Risk Assessment** |
 | Subcategory | **ID.RA-07** — "Changes and exceptions are managed, assessed for risk impact, recorded, and tracked" |
-| Rationale | The 247 accounts were, in effect, exceptions to the MFA requirement — but they were never assessed for risk impact, recorded as exceptions, or tracked. The ID.RA-07 outcome was not achieved. Marked as a supporting mapping: the primary mappings for F-01 are M-01 through M-03. |
+| Rationale | The 247 accounts functioned as an unmanaged population outside the current MFA requirement; there is no evidence that this population was formally recorded, assessed, or tracked as an exception. Against the ID.RA-07 outcome, the gap is in the "recorded, and tracked" clause — the non-compliant population was never brought under exception management. Marked as a supporting mapping: the primary mappings for F-01 are M-01 through M-03. |
 
 ## Deliberately not mapped
 
