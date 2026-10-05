@@ -31,9 +31,9 @@ Ratings are qualitative and apply the scales below, documented here so the ratin
 | Risk statement | Because 247 active customer accounts authenticate without required MFA, a threat actor using stolen or guessed credentials could gain unauthorized access to those accounts, exposing customer information. |
 | Condition | 247 active accounts on legacy policy without required MFA (F-01) |
 | Risk event | Unauthorized access to one or more customer accounts via credential-based attack |
-| Threat | External attackers using credential stuffing, password spraying, or phishing-derived credentials; 14,820 failed logins in the period indicate ongoing authentication probing (threat activity observed, intent not established per attempt) |
+| Threat | External attackers using credential stuffing, password spraying, or phishing-derived credentials; 14,820 failed logins in the period show sustained failed-authentication traffic (observed activity; intent behind any single attempt not established) |
 | Vulnerability / control gap | Missing required MFA on 247 accounts; no reconciliation detecting the gap |
-| Likelihood | **High** — exposed population exists and probing activity is observed |
+| Likelihood | **High** — exposed population exists and failed-authentication activity is observed |
 | Impact | **High** — healthcare customer accounts; confidentiality exposure with regulatory and reputational consequences |
 | Inherent risk | **High** |
 | Treatment | Enforce MFA on all 247 accounts; reconcile full population; fix migration process; add recurring compliance monitoring; independent validation (see remediation plan) |

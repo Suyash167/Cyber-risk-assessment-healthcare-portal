@@ -17,7 +17,7 @@ Classifications: **PROVED** · **SUPPORTED** · **LIKELY** · **NOT PROVED** · 
 
 ## Evidence vs. inference — worked examples
 
-1. **Evidence:** 14,820 failed login attempts (E-04). **Inference:** the portal faced authentication attack activity during the period (LIKELY — volume and patterns are consistent with guessing/probing, but benign causes such as forgotten passwords also produce failed logins). **Not established:** that any specific attempt was malicious or that any account was breached.
+1. **Evidence:** 14,820 failed login attempts (E-04). **Established:** a high volume of failed authentication activity occurred during the period (PROVED). **Inference:** the volume and patterns are consistent with automated probing or guessing activity (LIKELY — but benign causes such as forgotten passwords and misconfigured clients also produce failed logins, so attack activity is not established). **Not established:** that any specific attempt was malicious or that any account was breached.
 2. **Evidence:** 247 accounts on the legacy policy without MFA (E-02, E-03). **Inference:** these accounts were exposed to credential-based attack at lower assurance than policy requires (SUPPORTED — follows directly from the control requirement). **Not established:** that any of the 247 accounts was actually attacked or compromised.
 3. **Evidence:** 312 accounts with ≥5 consecutive failures (E-05). **Inference:** none drawn about lockout effectiveness — the threshold is unknown, so concluding either "lockout worked" or "lockout failed" would be inventing a conclusion. Recorded as MISSING EVIDENCE with follow-up recommended.
 

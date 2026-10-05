@@ -76,7 +76,7 @@ Each phase is documented in this repository. Evidence classifications used throu
 | Accounts with ≥5 consecutive failed logins | **312** |
 | Confirmed account compromise | **None established** |
 
-The failed-login figures indicate authentication attack activity worth monitoring. They do **not** establish malicious intent for any specific attempt and do **not** establish that any account was compromised. This distinction is maintained throughout the repository.
+The failed-login figures show a high volume of failed authentication activity worth monitoring. They do **not** establish malicious intent for any specific attempt and do **not** establish that any account was compromised. This distinction is maintained throughout the repository.
 
 ## Frameworks and methodologies
 

@@ -19,11 +19,11 @@ We assessed whether authentication controls on the customer portal — MFA, pass
 
 ## What the evidence does NOT establish
 
-The failed-login activity shows the portal is being probed. It does **not** establish that any specific attempt was malicious, and it does **not** establish that any account — including the 247 — was compromised. No incident is declared. Treating failed logins as a breach would overstate the evidence; ignoring them would understate the risk.
+The failed-login activity shows sustained failed authentication traffic against the portal. It does **not** establish that any specific attempt was malicious, and it does **not** establish that any account — including the 247 — was compromised. No incident is declared. Treating failed logins as a breach would overstate the evidence; ignoring them would understate the risk.
 
 ## Why it matters
 
-The 247 accounts authenticate at a lower assurance level than policy requires, in a portal serving healthcare customers. Credential-based attack (phishing-derived passwords, credential stuffing, password spraying) is the most likely way this gap gets exploited, and the observed probing shows attackers are already knocking. The business exposure is customer-data confidentiality, regulatory scrutiny, and customer trust.
+The 247 accounts authenticate at a lower assurance level than policy requires, in a portal serving healthcare customers. Credential-based attack (phishing-derived passwords, credential stuffing, password spraying) is the most likely way this gap gets exploited, and the 14,820 failed logins show the login endpoint is already receiving high volumes of failed authentication attempts. The business exposure is customer-data confidentiality, regulatory scrutiny, and customer trust.
 
 ## What management should do
 

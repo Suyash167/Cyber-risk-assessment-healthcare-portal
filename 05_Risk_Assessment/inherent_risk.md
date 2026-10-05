@@ -4,11 +4,11 @@ Inherent risk is assessed **before** considering the effect of the failed contro
 
 ## R-01 — Credential-based takeover of legacy-policy accounts
 
-**Threat.** Customer-facing authentication endpoints attract continuous credential-stuffing and password-spraying activity across the industry. In this assessment's evidence, 14,820 failed login attempts were logged in a two-month window, with 312 accounts showing ≥5 consecutive failures. This is consistent with automated probing. Intent behind any single attempt is not established, but the volume establishes that the threat is active against this portal, not theoretical.
+**Threat.** Customer-facing authentication endpoints are routinely subject to credential-stuffing and password-spraying activity across the industry. In this assessment's evidence, 14,820 failed login attempts were logged in a two-month window, with 312 accounts showing ≥5 consecutive failures. This volume is consistent with automated probing, but benign causes (forgotten passwords, misconfigured clients, user error) also produce failed logins — so the evidence establishes observed failed-authentication activity, not confirmed attack activity. Intent behind any single attempt is not established.
 
 **Vulnerability.** 247 active accounts authenticate without the MFA barrier policy requires. Single-factor (password-only) authentication is the vulnerability — it reduces account takeover to a credential-guessing problem.
 
-**Likelihood: High.** Both halves of the equation are observed: a real exposed population and real probing activity.
+**Likelihood: High.** Both halves of the equation are observed: a real exposed population and real failed-authentication activity at volume.
 
 **Impact: High.** The portal serves healthcare customers. Unauthorized access risks exposure of customer personal information, with downstream regulatory scrutiny and loss of customer trust. Impact is assessed on the data and context, not on any observed breach (none occurred).
 

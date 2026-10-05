@@ -11,7 +11,7 @@ flowchart TD
     E --> F[Accounts exposed to credential-based attack at below-policy assurance]
 ```
 
-Each link is supported by the evidence cited; where a link is inference rather than direct evidence, it is labeled.
+The diagram summarizes the chain; each link's evidence classification (PROVED / SUPPORTED / MISSING EVIDENCE) is given in the five-whys analysis below.
 
 ## Five-whys
 
@@ -25,7 +25,7 @@ Each link is supported by the evidence cited; where a link is inference rather t
 
 | Element | Classification | Statement |
 |---|---|---|
-| **Root cause** | Process failure | The migration process did not fully transition affected accounts to the current authentication policy and had no reconciliation step to detect the remainder. This is the reason the condition exists; fixing only the 247 accounts without fixing the process leaves the cause in place. |
+| **Root cause** | Process failure | The migration process did not fully transition affected accounts to the current authentication policy, and it had no reconciliation step to detect the remainder (supported inference — no reconciliation records exist in the evidence and the gap went undetected). This is the reason the condition exists; fixing only the 247 accounts without fixing the process leaves the cause in place. |
 | **Contributing factor** | Environmental | The legacy policy remained available and functional, so the failure was silent rather than self-revealing. |
 | **Contributing factor** | Detective gap | No ongoing reconciliation or compliance monitoring existed over the account-to-policy population. |
 | **Control deficiency** | Operating effectiveness | Authentication-policy enforcement (C-01/C-04) did not operate as required for the legacy population. Design was also partially deficient (no reconciliation step). |

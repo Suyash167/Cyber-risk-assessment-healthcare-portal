@@ -12,7 +12,7 @@ The current authentication policy requires MFA for all active customer accounts.
 
 ## Cause
 
-The legacy authentication-policy migration did not fully transition affected accounts: 247 active accounts remained on the legacy policy after the migration was treated as complete. The migration process had no population-reconciliation step that would have identified accounts left behind. (See [root cause analysis](../04_Root_Cause/root_cause_analysis.md).)
+The legacy authentication-policy migration did not fully transition affected accounts: 247 active accounts remained on the legacy policy after the migration was treated as complete. The migration process had no population-reconciliation step that would have identified accounts left behind (supported inference — no reconciliation records exist in the evidence and the gap went undetected; see evidence table). (See [root cause analysis](../04_Root_Cause/root_cause_analysis.md).)
 
 ## Contributing factors
 

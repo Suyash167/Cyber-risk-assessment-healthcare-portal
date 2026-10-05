@@ -70,7 +70,7 @@ Each control is assessed for **design effectiveness** (would it work if operated
 
 **Control requirement:** The migration process moves every active account to the current authentication policy, and any account that cannot be migrated is identified, tracked, and resolved.
 
-**Design effectiveness — Partially effective.** A migration process existed and transitioned the majority of accounts. However, the process design did not include a complete population reconciliation step that would have identified accounts left behind — a design gap, not just an execution slip.
+**Design effectiveness — Partially effective.** A migration process existed and transitioned the majority of accounts. However, the process design did not include a complete population reconciliation step that would have identified accounts left behind (supported inference — no reconciliation records exist in the evidence and the remainder went undetected) — a design gap, not just an execution slip.
 
 **Operating effectiveness — Deficient.** 247 active accounts remained on the legacy policy. The migration did not achieve its required outcome for these accounts, and the gap was not detected by the process itself.
 
